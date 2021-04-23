@@ -459,7 +459,14 @@ std::tuple<std::vector<WalletTypes::TxInputAndOwner>, uint64_t> SubWallets::getT
     {
         const auto moreInputs = subWallet.getSpendableInputs(height);
 
-        availableInputs.insert(availableInputs.end(), moreInputs.begin(), moreInputs.end());
+        for (const auto &eachInput : moreInputs)
+        {
+            if (eachInput.input.amount >= CryptoNote::parameters::INPUT_NOT_SENDING)
+            {
+                availableInputs.insert(availableInputs.end(), eachInput);
+            }
+        }
+        // availableInputs.insert(availableInputs.end(), moreInputs.begin(), moreInputs.end());
     }
 
     /* Shuffle the inputs */
@@ -525,8 +532,15 @@ std::tuple<std::vector<WalletTypes::TxInputAndOwner>, uint64_t, uint64_t> SubWal
     for (const auto &subWallet : wallets)
     {
         const auto moreInputs = subWallet.getSpendableInputs(height);
-
-        availableInputs.insert(availableInputs.end(), moreInputs.begin(), moreInputs.end());
+        
+        for (const auto &eachInput : moreInputs)
+        {
+            if (eachInput.input.amount >= CryptoNote::parameters::INPUT_NOT_SENDING)
+            {
+                availableInputs.insert(availableInputs.end(), eachInput);
+            }
+        }
+        // availableInputs.insert(availableInputs.end(), moreInputs.begin(), moreInputs.end());
     }
 
     /* Get an approximation of the max amount of inputs we can include in this
