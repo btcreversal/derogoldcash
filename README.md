@@ -2,7 +2,7 @@
 
 ### Installing
 
-We offer binary images of the latest releases here: https://github.com/derogold/derogold/releases
+We offer binary images of the latest releases here: https://github.com/derogoldcash/derogoldcash/releases
 
 If you would like to compile yourself, read on.
 
@@ -33,8 +33,8 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo apt install -y build-essential g++-9 gcc-9 git libboost-all-dev python-pip libssl-dev cmake`
 - `export CC=gcc-9`
 - `export CXX=g++-9`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/derogoldcash/derogoldcash`
+- `cd derogoldcash`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -43,7 +43,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./derogoldcashd --version`
 
 ##### Ubuntu, using Clang
 
@@ -66,8 +66,8 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/derogoldcash/derogoldcash`
+- `cd derogoldcash`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -76,7 +76,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./derogoldcashd --version`
 
 ##### Generic Linux
 
@@ -85,8 +85,8 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/derogoldcash/derogoldcash`
+- `cd derogoldcash`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -95,7 +95,7 @@ See the ubuntu instructions for an example.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./derogoldcashd --version`
 
 #### OSX/Apple, using Clang
 
@@ -111,8 +111,8 @@ The binaries will be in the `src` folder when you are complete.
 - `ln -s /usr/local/opt/llvm@8 /usr/local/opt/llvm`
 - `export CC=/usr/local/opt/llvm@8/bin/clang`
 - `export CXX=/usr/local/opt/llvm@8/bin/clang++`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/derogoldcash/derogoldcash`
+- `cd derogoldcash`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -121,7 +121,7 @@ The binaries will be in the `src` folder when you are complete.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./derogoldcashd --version`
 
 #### Windows with VS2019
 
@@ -142,7 +142,7 @@ You can build for 32-bit or 64-bit Windows. **If you're not sure, pick 64-bit.**
 
 For 64-bit:
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2019'.
-- `cd <your_derogold_directory>`
+- `cd <your_derogoldcash_directory>`
 - `mkdir build`
 - `cd build`
 - `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
@@ -150,10 +150,10 @@ For 64-bit:
 
 If you have errors on this step about not being able to find the following static libraries, you may need to update your cmake. Open 'Visual Studio Installer' and click 'Update'.
 
-- `MSBuild DeroGold.sln /p:Configuration=Release /p:PlatformToolset=v141 /m`
+- `MSBuild derogoldcash.sln /p:Configuration=Release /p:PlatformToolset=v141 /m`
 
 For 32-bit:
-- `cd <your_derogold_directory>`
+- `cd <your_derogoldcash_directory>`
 - `mkdir build`
 - `cd build`
 - `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
@@ -161,13 +161,13 @@ For 32-bit:
 
 If you have errors on this step about not being able to find the following static libraries, you may need to update your cmake. Open 'Visual Studio Installer' and click 'Update'.
 
-- `MSBuild DeroGold.sln /p:Configuration=Release /p:Platform=Win32 /p:PlatformToolset=v141 /m`
+- `MSBuild derogoldcash.sln /p:Configuration=Release /p:Platform=Win32 /p:PlatformToolset=v141 /m`
 
 The binaries will be in the `src/Release` folder when you are complete.
 
 - `cd src`
 - `cd Release`
-- `DeroGoldd.exe --version`
+- `derogoldcashd.exe --version`
 
 #### AARCH64/ARM64 (non-Raspberry)
 When building on latest Armbian supported for your board, follow linux GCC instructions above.
@@ -185,8 +185,8 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/derogoldcash/derogoldcash`
+- `cd derogoldcash`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -195,17 +195,17 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 The binaries will be in the `src` directory when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./derogoldcashd --version`
 
 ##### Building with LevelDB
-No need to add a flag anymore, both RocksDB and LevelDB backends are build. You can switch between them by using DeroGoldd command line option at the runtime.
+No need to add a flag anymore, both RocksDB and LevelDB backends are build. You can switch between them by using derogoldcashd command line option at the runtime.
 
 #### Thanks
 Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Developers
 
 ### Copypasta for license when editing files
 
-Hi DeroGold contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h] for an example.
+Hi derogoldcash contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h] for an example.
 
 ```
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers

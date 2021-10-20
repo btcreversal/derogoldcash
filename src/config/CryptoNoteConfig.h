@@ -277,7 +277,7 @@ namespace CryptoNote
 
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "DeroGold";
+    const char CRYPTONOTE_NAME[] = "derogoldcash";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
@@ -362,17 +362,14 @@ namespace CryptoNote
     const uint64_t LEVELDB_MAX_OPEN_FILES = 512; // 512 files
     const uint64_t LEVELDB_MAX_FILE_SIZE_MB = 1024; // 1024MB = 1GB
 
-    const char LATEST_VERSION_URL[] = "https://github.com/derogold/derogold/releases";
+    const char LATEST_VERSION_URL[] = "https://github.com/derogoldcash/derogoldcash/releases";
 
-    const std::string LICENSE_URL = "https://github.com/derogold/derogold/blob/master/LICENSE";
+    const std::string LICENSE_URL = "https://github.com/derogoldcash/derogoldcash/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
         {0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
 
     const char* const SEED_NODES[] = {
-        "195.154.81.135:12169", // bob bie
-        "176.9.124.189:42069", // Pluto
-        "84.242.80.251:42069", // CuéeBits
-        "46.214.70.196:42069", // derogold4ever.online
+        "5.135.21.189:42069", // Alfariqi
     };
 } // namespace CryptoNote
