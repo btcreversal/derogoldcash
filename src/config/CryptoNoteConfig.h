@@ -65,9 +65,8 @@ namespace CryptoNote
         /* Height to swap to EMISSION_SPEED_FACTOR_V2 */
         const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT = 700000;
 
-        const char GENESIS_COINBASE_TX_HEX[] = "017801ff0001a0ccd705029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101fe8ababd4a8cd211b065f5074843419da50dc227247a04526b9265cb3ccda4e3";
-
-// "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+        const char GENESIS_COINBASE_TX_HEX[] = 
+		"010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
             "GENESIS_COINBASE_TX_HEX must not be empty.");
@@ -75,7 +74,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1634782877; //old 1545261161
+        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1545261161;
 
         const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
