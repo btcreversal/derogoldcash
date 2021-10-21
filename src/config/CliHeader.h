@@ -1,3 +1,4 @@
+// Copyright (c) 2021-2021, The DeroGold Cash Developers
 // Copyright (c) 2018-2021, The DeroGold Developers
 // Copyright (c) 2018, The TurtleCoin Developers
 //

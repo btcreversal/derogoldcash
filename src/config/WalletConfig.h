@@ -1,3 +1,4 @@
+// Copyright (c) 2021-2021, The DeroGold Cash Developers
 // Copyright (c) 2018-2021, The DeroGold Developers
 // Copyright (c) 2018, The TurtleCoin Developers
 // 
@@ -11,10 +12,10 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string_view addressPrefix = "dg";
+    const std::string_view addressPrefix = "RG";
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
-    const std::string ticker = "DEGO";
+    const std::string ticker = "DGOLD";
 
     /* The filename to output the CSV to in save_csv */
     const std::string csvFilename = "transactions.csv";
@@ -37,7 +38,7 @@ namespace WalletConfig
     const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME);
 
     /* Where can your users contact you for support? E.g. discord */
-    const std::string contactLink = "http://derogoldcash.gq/";
+    const std::string contactLink = "http://derogoldcash.com/";
 
     /* The number of decimals your coin has */
     const uint8_t numDecimalPlaces = CryptoNote::parameters

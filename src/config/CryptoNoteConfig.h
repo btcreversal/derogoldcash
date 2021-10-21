@@ -1,3 +1,4 @@
+// Copyright (c) 2021-2021, The DeroGold Cash Developers
 // Copyright (c) 2018-2021, The DeroGold Developers
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
@@ -21,7 +22,7 @@ namespace CryptoNote
     {
         const uint64_t DIFFICULTY_TARGET = 10; // seconds
 
-        const uint64_t DIFFICULTY_TARGET_V2 = 20; // seconds
+        const uint64_t DIFFICULTY_TARGET_V2 = 120; // seconds
 
 	const uint64_t DIFFICULTY_TARGET_V3 = 300; // seconds
 
@@ -38,7 +39,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 8411;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 3601;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 120;
 
@@ -51,7 +52,7 @@ namespace CryptoNote
         const size_t BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW = 11;
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY = UINT64_C(10000000000000000);
+        const uint64_t MONEY_SUPPLY = UINT64_C(100000000000000);
 
         const unsigned EMISSION_SPEED_FACTOR = 23;
 
@@ -64,9 +65,9 @@ namespace CryptoNote
         /* Height to swap to EMISSION_SPEED_FACTOR_V2 */
         const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT = 700000;
 
-        const char GENESIS_COINBASE_TX_HEX[] =
-            "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+        const char GENESIS_COINBASE_TX_HEX[] = "017801ff0001a0ccd705029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101fe8ababd4a8cd211b065f5074843419da50dc227247a04526b9265cb3ccda4e3";
 
+// "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
             "GENESIS_COINBASE_TX_HEX must not be empty.");
@@ -74,7 +75,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1545261161;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1634782877; //old 1545261161
 
         const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
@@ -166,7 +167,7 @@ namespace CryptoNote
         /* For new projects forked from this code base, the values immediately below
            should be changed to 0 to prevent issues with transaction processing
            and other possible unexpected behavior */
-        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 700000;
+        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 0;
 
         const uint64_t BLOCK_BLOB_SHUFFLE_CHECK_HEIGHT = 1800000;
 
@@ -272,6 +273,7 @@ namespace CryptoNote
         const char P2P_NET_DATA_FILENAME[] = "p2pstate.bin";
 
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
+		
         /* Maximum allowable blocks to rewind from existing chain */
         const uint64_t MAX_BLOCK_ALLOWED_TO_REWIND = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY * 3;
 

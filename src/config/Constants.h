@@ -184,7 +184,7 @@ namespace Constants
                                                 7000000000000000000,
                                                 8000000000000000000,
                                                 9000000000000000000,
-                                                10000000000000000000ull};
+                                                10000000000000000000};
 
     /* Indicates the following data is a payment ID */
     const uint8_t TX_EXTRA_PAYMENT_ID_IDENTIFIER = 0x00;

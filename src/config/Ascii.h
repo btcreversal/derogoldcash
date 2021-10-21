@@ -1,3 +1,4 @@
+// Copyright (c) 2021-2021, The DeroGold Cash Developers
 // Copyright (c) 2018-2021, The DeroGold Developers
 // Copyright (c) 2018, The TurtleCoin Developers
 //
@@ -20,7 +21,7 @@ const std::string asciiArt =
 ".oSSSXXXe`   .-=vnnommmpa;.      =+===:-. \n"
 "|nooo222~      .n2nSZ##o1l>      .: .     \n"
 "ivvnnnnl       .XXSnXmXIi|=:              \n"
-"iililii=        v2oSXX>==;;:    .  .   .  \n"
+"iililii=       .derogoldcash     .  .  .  \n"
 "||+|+|+:       .||lnoZns|||=    ==========\n"
 ":;;;;;;:       .voXXoZmXonv=.  .|||||||+|=\n"
 ".==++|||.      .3ZXooXmBmX}.   .<ii||||||:\n"
