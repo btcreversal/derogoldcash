@@ -22,7 +22,7 @@ namespace CryptoNote
     {
         const uint64_t DIFFICULTY_TARGET = 10; // seconds
 
-        const uint64_t DIFFICULTY_TARGET_V2 = 120; // seconds
+        const uint64_t DIFFICULTY_TARGET_V2 = 20; // seconds
 
 	const uint64_t DIFFICULTY_TARGET_V3 = 300; // seconds
 
