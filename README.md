@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/4FlvRAt.png" width="200">
+<img src="" width="200">
 
 ### Installing
 
@@ -214,6 +214,7 @@ Hi derogoldcash contributor, thanks for forking and sending back Pull Requests. 
 // Copyright (c) 2018-2021, The WRKZCoin Developers
 // Copyright (c) 2019-2021, uPlexa
 // Copyright (c) 2018-2021, The DeroGold Developers
+// Copyright (c) 2021-2021, The DeroGold Cash Developers
 //
 // Please see the included LICENSE file for more information.
 ```
