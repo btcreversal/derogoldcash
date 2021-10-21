@@ -67,7 +67,8 @@ namespace CryptoNote
 
         const char GENESIS_COINBASE_TX_HEX[] = 
 		"010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
-        static_assert(
+        
+		static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
             "GENESIS_COINBASE_TX_HEX must not be empty.");
 
@@ -315,9 +316,9 @@ namespace CryptoNote
 
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 100;
 
-    const int P2P_DEFAULT_PORT = 42069;
+    const int P2P_DEFAULT_PORT = 17236;
 
-    const int RPC_DEFAULT_PORT = 6969;
+    const int RPC_DEFAULT_PORT = 18236;
 
     const int SERVICE_DEFAULT_PORT = 1337;
 
@@ -371,6 +372,6 @@ namespace CryptoNote
         {0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
 
     const char* const SEED_NODES[] = {
-        "5.135.21.189:42069", // Alfariqi
+        "5.135.21.189:17236", // Alfariqi
     };
 } // namespace CryptoNote
