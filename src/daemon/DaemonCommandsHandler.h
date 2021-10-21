@@ -65,6 +65,8 @@ class DaemonCommandsHandler
     std::string get_commands_str();
 
     bool print_block_by_height(uint32_t height);
+	
+    bool print_block_by_height(uint64_t height); // cause warning on compiler warning: unused variable 'height' [-Wunused-variable]
 
     bool print_block_by_hash(const std::string &arg);
 
