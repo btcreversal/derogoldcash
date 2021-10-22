@@ -1,4 +1,3 @@
-// Copyright (c) 2021-2021, The DeroGold Cash Developers
 // Copyright (c) 2018-2021, The DeroGold Developers
 // Copyright (c) 2018, The TurtleCoin Developers
 // 
@@ -38,7 +37,7 @@ namespace WalletConfig
     const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME);
 
     /* Where can your users contact you for support? E.g. discord */
-    const std::string contactLink = "http://derogoldcash.com/";
+    const std::string contactLink = "http://derogoldcash.org/";
 
     /* The number of decimals your coin has */
     const uint8_t numDecimalPlaces = CryptoNote::parameters
@@ -64,7 +63,7 @@ namespace WalletConfig
     const uint64_t minimumSend = 100000;
 
     /* Is a mixin of zero disabled on your network? */
-    const bool mixinZeroDisabled = true;
+    const bool mixinZeroDisabled = false;
 
     /* If a mixin of zero is disabled, at what height was it disabled? E.g.
        fork height, or 0, if never allowed. This is ignored if a mixin of
