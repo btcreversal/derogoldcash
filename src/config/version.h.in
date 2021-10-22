@@ -2,11 +2,11 @@
 #define STR(x) STR_HELPER(x)
 
 #define PROJECT_NAME "derogoldcash"
-#define PROJECT_SITE "https://derogoldcashcash.com"
+#define PROJECT_SITE "https://derogoldcash.com"
 #define PROJECT_COPYRIGHT "Copyright 2021-2021, The DeroGold Cash Developers"
 
 #define APP_VER_MAJOR 0
-#define APP_VER_MINOR 6
+#define APP_VER_MINOR 0
 #define APP_VER_REV 0
 #define APP_VER_BUILD 1
 

@@ -5,6 +5,7 @@
 // Copyright (c) 2018-2019, The TurtleCoin Developers
 //
 // Please see the included LICENSE file for more information.
+// https://docs.turtlecoin.lol/developer/forking-turtlecoin
 
 #pragma once
 
@@ -30,7 +31,6 @@ namespace CryptoNote
         const uint64_t DIFFICULTY_TARGET_V2_HEIGHT = 700000;
 
 	/* Height to change to DIFFICULTY_TARGET_V3 */
-
 	const uint64_t DIFFICULTY_TARGET_V3_HEIGHT = 2325000;
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER = 500000000;
@@ -39,11 +39,11 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 3601;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 29914;
 
-        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 120;
+        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;
 
-        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW_V2 = 8;
+        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW_V2 = 10;
 
         const uint64_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW_V2_HEIGHT = 2325000;
 
@@ -167,7 +167,7 @@ namespace CryptoNote
         /* For new projects forked from this code base, the values immediately below
            should be changed to 0 to prevent issues with transaction processing
            and other possible unexpected behavior */
-        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 0;
+        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 700000;
 
         const uint64_t BLOCK_BLOB_SHUFFLE_CHECK_HEIGHT = 1800000;
 
@@ -369,9 +369,10 @@ namespace CryptoNote
     const std::string LICENSE_URL = "https://github.com/derogoldcash/derogoldcash/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
+        {0x20, 0x33, 0x44, 0x55, 0x66, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
 
     const char* const SEED_NODES[] = {
         "5.135.21.189:17236", // Alfariqi
+		"5.135.21.254:17236", // IPHoster
     };
 } // namespace CryptoNote

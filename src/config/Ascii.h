@@ -10,6 +10,7 @@
 #pragma once
 
 const std::string asciiArt =
+"                ...........                 "
 "            .:|iv2X##mB#Xovi;..           \n"
 "         .=inno2XXZ##mBmmm#mXwa;.         \n"
 "       _ivnnnooSSXZ##mBBmm#ZZX2ooi:       \n"
