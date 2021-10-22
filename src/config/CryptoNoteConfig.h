@@ -39,7 +39,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 29914;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 30810;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;
 
@@ -373,6 +373,5 @@ namespace CryptoNote
 
     const char* const SEED_NODES[] = {
         "5.135.21.189:17236", // Alfariqi
-		"5.135.21.254:17236", // IPHoster
     };
 } // namespace CryptoNote
