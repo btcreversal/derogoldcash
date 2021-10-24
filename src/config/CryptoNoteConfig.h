@@ -320,7 +320,7 @@ namespace CryptoNote
 
     const int RPC_DEFAULT_PORT = 18236;
 
-    const int SERVICE_DEFAULT_PORT = 1337;
+    const int SERVICE_DEFAULT_PORT = 1331;
 
     const size_t P2P_LOCAL_WHITE_PEERLIST_LIMIT = 1000;
 
@@ -373,5 +373,6 @@ namespace CryptoNote
 
     const char* const SEED_NODES[] = {
         "5.135.21.189:17236", // Alfariqi
+		"15.137.31.189:17236", // nono
     };
 } // namespace CryptoNote
